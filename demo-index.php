@@ -1,6 +1,8 @@
 <?php
-  $bericht = "<voer hier je bericht in>";
-  $naam = "<voer hier je naam in>";
+$naam = "<voer hier je naam in>";
+$bericht = <<<ENDOFMESSAGE
+<voer hier je bericht in>
+ENDOFMESSAGE;
 ?>
 
 <html>
@@ -8,7 +10,7 @@
 	</head>
 	<body>
 		<h1><?php print(htmlentities($naam));?> heeft het volgende bericht</h1>
-		<p><?php print(htmlentities($bericht));?></p>
+		<pre><?php print(htmlentities($bericht));?></pre>
 	</body>
 </html>
 
